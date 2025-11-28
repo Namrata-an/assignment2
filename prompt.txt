@@ -1,8 +1,9 @@
-
+1.Raw JSON array of fruits, no extra text.
  Final Perfect Prompt 
 Prompt:Give me the same list with the code and  no extra text involved in it
 �
-�
+2.Specific format correctly 5 times in a row  . 
+
  Final Perfect Prompt 
 Prompt  : EX:["Apple", "Banana", "Mango", "Grapes",  "Pineapple"] 
 i need my output in this way which is to be iterated 5 times ,give me the code too

@@ -1,9 +1,69 @@
-1.Raw JSON array of fruits, no extra text.
- Final Perfect Prompt 
-Prompt:Give me the same list with the code and  no extra text involved in it
-�
-2.Specific format correctly 5 times in a row  . 
+Failed Prompt Iterations 
+I.“return me the list of fruit (any 5)the specific point is it must be the json list of fruits” 
+Result: 
+[
+]
+"Apple",
+"Banana",
+"Mango",
+"Grapes",
+"Pineapple"
+●  The output was just a list of fruits but I needed  code with it 
 
- Final Perfect Prompt 
-Prompt  : EX:["Apple", "Banana", "Mango", "Grapes",  "Pineapple"] 
-i need my output in this way which is to be iterated 5 times ,give me the code too
+II.use json explicitly with python give the code with an output for the above prompt 
+Result: 
+import json 
+# List of fruits 
+fruits = ["Apple", "Banana", "Mango", "Grapes", "Pineapple"] 
+# Convert Python list to JSON string 
+json_output = json.dumps(fruits) 
+print("JSON List of Fruits:") 
+print(json_output) 
+Output: 
+JSON List of Fruits: 
+["Apple", "Banana", "Mango", "Grapes", "Pineapple"] 
+●  The output was not totally satisfied ,there  was no proper indentation 
+
+III.Give me the list in the proper indentation 
+Result: 
+import json 
+# List of fruits 
+fruits = ["Apple", "Banana", "Mango", "Grapes", "Pineapple"] 
+# Convert Python list to a pretty JSON string 
+json_output = json.dumps(fruits, indent=4) 
+print("Pretty JSON List of Fruits:")
+print(json_output)
+Output  :
+Pretty JSON List of Fruits:
+[
+"Apple",
+"Banana",
+"Mango",
+"Grapes",
+"Pineapple"
+]
+●  We got the approximate output but with extra  text
+
+2.Specific format correctly 5 times in a row  .
+
+Failed Prompt Iteration 
+I. give me the list of cars using json integrated with python 
+output must be in proper indentation 
+Result  :
+import json 
+# List of cars 
+cars = ["Tesla Model S", "BMW X5", "Audi A6", "Mercedes C-Class", "Toyota Fortuner"] 
+# Convert Python list to a pretty JSON string 
+json_output = json.dumps(cars, indent=4) 
+print("Pretty JSON List of Cars:")
+print(json_output)
+Output  :
+Pretty JSON List of Cars:
+[
+]
+"Tesla Model S",
+"BMW X5",
+"Audi A6",
+"Mercedes C-Class",
+"Toyota Fortuner"
+●  We didn’t get our list iterated and extra text  is added to it .
